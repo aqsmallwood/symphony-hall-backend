@@ -602,8 +602,8 @@
       "Composer": {
         "type": "object",
         "required": [
-          "first_name",
-          "last_name"
+          "given_name",
+          "family_name"
         ],
         "properties": {
           "id": {
@@ -611,11 +611,11 @@
             "format": "int64",
             "example": 1
           },
-          "first_name": {
+          "given_name": {
             "type": "string",
             "example": "Dmitri"
           },
-          "last_name": {
+          "family_name": {
             "type": "string",
             "example": "Shostakovich"
           }
