@@ -1,0 +1,741 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "description": "Symphony Hall is an API that exposes information about classical composers, their works, and who is playing them.",
+      "version": "0.0.1",
+      "title": "Symphony Hall",
+      "termsOfService": "https://symphony.saphyre.tech/terms/",
+      "contact": {
+        "email": "AQSmallwood@gmail.com"
+      },
+      "license": {
+        "name": "Apache 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+      }
+    },
+    "host": "symphony.saphyre.tech",
+    "basePath": "/api",
+    "tags": [
+      {
+        "name": "composers",
+        "description": "Everything about Composers"
+      },
+      {
+        "name": "performers",
+        "description": "Everything about Performers"
+      },
+      {
+        "name": "performances",
+        "description": "Everything about Performances"
+      },
+      {
+        "name": "venues",
+        "description": "Everything about Venues"
+      },
+      {
+        "name": "works",
+        "description": "Everything about Works"
+      }
+    ],
+    "schemes": [
+      "https"
+    ],
+    "paths": {
+      "/composers/": {
+        "get": {
+          "tags": [
+            "composers"
+          ],
+          "summary": "Get multiple composers",
+          "description": "Returns paginated list of all composers",
+          "operationId": "get_composers",
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "Request was valid and composer results are returned",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/Composer"
+                }
+              }
+            }
+          },
+          "security": [
+            {
+              "api_key": []
+            }
+          ]
+        }
+      },
+      "/composers/{composer_id}/": {
+        "get": {
+          "tags": [
+            "composers"
+          ],
+          "summary": "Get composer by ID",
+          "description": "Returns a single composer",
+          "operationId": "get_composer_by_id",
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "composer_id",
+              "in": "path",
+              "description": "ID of composer to return",
+              "required": true,
+              "type": "integer",
+              "format": "int64"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Composer was found and returned",
+              "schema": {
+                "$ref": "#/definitions/Composer"
+              }
+            },
+            "404": {
+              "description": "Composer not found"
+            }
+          },
+          "security": [
+            {
+              "api_key": []
+            }
+          ]
+        }
+      },
+      "/performers/": {
+        "get": {
+          "tags": [
+            "performers"
+          ],
+          "summary": "Get multiple performers",
+          "description": "Returns paginated list of all performers",
+          "operationId": "get_performers",
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "Request was valid and performers results are returned",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/Performer"
+                }
+              }
+            }
+          },
+          "security": [
+            {
+              "api_key": []
+            }
+          ]
+        }
+      },
+      "/performers/{performer_id}/": {
+        "get": {
+          "tags": [
+            "performers"
+          ],
+          "summary": "Get performer by ID",
+          "description": "Returns a single performer",
+          "operationId": "get_performer_by_id",
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "performer_id",
+              "in": "path",
+              "description": "ID of performer to return",
+              "required": true,
+              "type": "integer",
+              "format": "int64"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "performer was found and returned",
+              "schema": {
+                "$ref": "#/definitions/Performer"
+              }
+            },
+            "404": {
+              "description": "Performer not found"
+            }
+          },
+          "security": [
+            {
+              "api_key": []
+            }
+          ]
+        }
+      },
+      "/performances/": {
+        "get": {
+          "tags": [
+            "performances"
+          ],
+          "summary": "Get multiple performances",
+          "description": "Returns paginated list of all performances",
+          "operationId": "get_performances",
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "Request was valid and performances results are returned",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/Performance"
+                }
+              }
+            }
+          },
+          "security": [
+            {
+              "api_key": []
+            }
+          ]
+        }
+      },
+      "/performances/{work_id}/": {
+        "get": {
+          "tags": [
+            "performances"
+          ],
+          "summary": "Get performance by ID",
+          "description": "Returns a single performance",
+          "operationId": "get_performance_by_id",
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "performance_id",
+              "in": "path",
+              "description": "ID of performance to return",
+              "required": true,
+              "type": "integer",
+              "format": "int64"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "performance was found and returned",
+              "schema": {
+                "$ref": "#/definitions/Performance"
+              }
+            },
+            "404": {
+              "description": "Work not found"
+            }
+          },
+          "security": [
+            {
+              "api_key": []
+            }
+          ]
+        }
+      },
+      "/venues/": {
+        "get": {
+          "tags": [
+            "venues"
+          ],
+          "summary": "Get multiple venues",
+          "description": "Returns paginated list of all venues",
+          "operationId": "get_venues",
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "Request was valid and venues results are returned",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/Venue"
+                }
+              }
+            }
+          },
+          "security": [
+            {
+              "api_key": []
+            }
+          ]
+        }
+      },
+      "/venues/{venue_id}/": {
+        "get": {
+          "tags": [
+            "venues"
+          ],
+          "summary": "Get venue by ID",
+          "description": "Returns a single venue",
+          "operationId": "get_venue_by_id",
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "venue_id",
+              "in": "path",
+              "description": "ID of venue to return",
+              "required": true,
+              "type": "integer",
+              "format": "int64"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "venue was found and returned",
+              "schema": {
+                "$ref": "#/definitions/Venue"
+              }
+            },
+            "404": {
+              "description": "Venue not found"
+            }
+          },
+          "security": [
+            {
+              "api_key": []
+            }
+          ]
+        }
+      },
+      "/works/": {
+        "get": {
+          "tags": [
+            "works"
+          ],
+          "summary": "Get multiple works",
+          "description": "Returns paginated list of all works",
+          "operationId": "get_works",
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "Request was valid and works results are returned",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/Work"
+                }
+              }
+            }
+          },
+          "security": [
+            {
+              "api_key": []
+            }
+          ]
+        }
+      },
+      "/works/{work_id}/": {
+        "get": {
+          "tags": [
+            "works"
+          ],
+          "summary": "Get work by ID",
+          "description": "Returns a single work",
+          "operationId": "get_work_by_id",
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "work_id",
+              "in": "path",
+              "description": "ID of work to return",
+              "required": true,
+              "type": "integer",
+              "format": "int64"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "work was found and returned",
+              "schema": {
+                "$ref": "#/definitions/Work"
+              }
+            },
+            "404": {
+              "description": "Work not found"
+            }
+          },
+          "security": [
+            {
+              "api_key": []
+            }
+          ]
+        }
+      },
+      "/works/{work_id}/heard/": {
+        "post": {
+          "tags": [
+            "works"
+          ],
+          "summary": "Set work to heard for the authenticated user",
+          "description": "Marks a work as heard by an authenticated user",
+          "operationId": "set_work_as_heard",
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "work_id",
+              "in": "path",
+              "description": "ID of work to mark as heard",
+              "required": true,
+              "type": "integer",
+              "format": "int64"
+            }
+          ],
+          "responses": {
+            "201": {
+              "description": "The work was found and marked as heard for the user"
+            },
+            "401": {
+              "description": "Unauthorized"
+            },
+            "404": {
+              "description": "Work not found"
+            }
+          },
+          "security": [
+            {
+              "api_key": []
+            }
+          ]
+        },
+        "delete": {
+          "tags": [
+            "works"
+          ],
+          "summary": "Unset a work as heard by the authenticated user",
+          "description": "Marks a work as not heard by an authenticated user",
+          "operationId": "unset_work_as_heard",
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "work_id",
+              "in": "path",
+              "description": "ID of work to mark as heard",
+              "required": true,
+              "type": "integer",
+              "format": "int64"
+            }
+          ],
+          "responses": {
+            "201": {
+              "description": "The work was found and marked as heard for the user"
+            },
+            "401": {
+              "description": "Unauthorized"
+            },
+            "404": {
+              "description": "Work not found"
+            }
+          },
+          "security": [
+            {
+              "api_key": []
+            }
+          ]
+        }
+      },
+      "/works/{work_id}/seen/": {
+        "post": {
+          "tags": [
+            "works"
+          ],
+          "summary": "Set work to seen for the authenticated user",
+          "description": "Marks a work as seen by an authenticated user",
+          "operationId": "set_work_as_seen",
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "work_id",
+              "in": "path",
+              "description": "ID of work to mark as seen",
+              "required": true,
+              "type": "integer",
+              "format": "int64"
+            }
+          ],
+          "responses": {
+            "201": {
+              "description": "The work was found and marked as seen for the user"
+            },
+            "401": {
+              "description": "Unauthorized"
+            },
+            "404": {
+              "description": "Work not found"
+            }
+          },
+          "security": [
+            {
+              "api_key": []
+            }
+          ]
+        },
+        "delete": {
+          "tags": [
+            "works"
+          ],
+          "summary": "Unset a work as seen by the authenticated user",
+          "description": "Marks a work as not seen by an authenticated user",
+          "operationId": "unset_work_as_seen",
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "work_id",
+              "in": "path",
+              "description": "ID of work to mark as seen",
+              "required": true,
+              "type": "integer",
+              "format": "int64"
+            }
+          ],
+          "responses": {
+            "201": {
+              "description": "The work was found and marked as heard for the user"
+            },
+            "401": {
+              "description": "Unauthorized"
+            },
+            "404": {
+              "description": "Work not found"
+            }
+          },
+          "security": [
+            {
+              "api_key": []
+            }
+          ]
+        }
+      },
+      "/users/": {
+        "post": {
+          "tags": [
+            "user"
+          ],
+          "summary": "Create user",
+          "description": "This can only be done by the logged in user.",
+          "operationId": "createUser",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json",
+            "application/xml"
+          ],
+          "parameters": [
+            {
+              "in": "body",
+              "name": "body",
+              "description": "Created user object",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/User"
+              }
+            }
+          ],
+          "responses": {
+            "default": {
+              "description": "successful operation"
+            }
+          }
+        }
+      }
+    },
+    "securityDefinitions": {
+      "api_key": {
+        "type": "apiKey",
+        "name": "api_key",
+        "in": "header"
+      },
+      "petstore_auth": {
+        "type": "oauth2",
+        "authorizationUrl": "https://petstore.swagger.io/oauth/authorize",
+        "flow": "implicit",
+        "scopes": {
+          "read:pets": "read your pets",
+          "write:pets": "modify pets in your account"
+        }
+      }
+    },
+    "definitions": {
+      "ApiResponse": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "type": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "Composer": {
+        "type": "object",
+        "required": [
+          "first_name",
+          "last_name"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "example": 1
+          },
+          "first_name": {
+            "type": "string",
+            "example": "Dmitri"
+          },
+          "last_name": {
+            "type": "string",
+            "example": "Shostakovich"
+          }
+        }
+      },
+      "Performer": {
+        "type": "object",
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "example": 1
+          },
+          "name": {
+            "type": "string",
+            "example": "New York Philharmonic Orchestra"
+          }
+        },
+        "xml": {
+          "name": "Performer"
+        }
+      },
+      "Performance": {
+        "type": "object",
+        "required": [
+          "performed_at",
+          "performers",
+          "work"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "example": 1
+          },
+          "performed_at": {
+            "type": "date",
+            "example": "2010-06-10"
+          },
+          "performers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/Performer"
+            }
+          },
+          "work": {
+            "type": "object",
+            "$ref": "#/definitions/Work"
+          }
+        }
+      },
+      "Venue": {
+        "type": "object",
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "example": 1
+          },
+          "name": {
+            "type": "string",
+            "example": "Carnegie Hall"
+          }
+        }
+      },
+      "Work": {
+        "type": "object",
+        "required": [
+          "name",
+          "composers"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "example": 1
+          },
+          "name": {
+            "type": "string",
+            "example": "Symphony No. 5 in D minor"
+          },
+          "composers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/Composer"
+            }
+          }
+        }
+      },
+      "User": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "example": 1
+          },
+          "username": {
+            "type": "string",
+            "example": "cello55"
+          },
+          "email": {
+            "type": "string",
+            "example": "cellofan@gmail.com"
+          },
+          "avatar": {
+            "type": "uri",
+            "example": "https://symphony-hall.s3.aws.com/avatars/cello55.png"
+          }
+        }
+      }
+    },
+    "externalDocs": {
+      "description": "Find out more about Symphony Hall",
+      "url": "https://symphony.saphyre.tech/"
+    }
+  }
