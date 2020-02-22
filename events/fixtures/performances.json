@@ -1,0 +1,182 @@
+[
+    {
+      "model": "events.performance",
+      "pk": 1,
+      "fields": {
+        "performed_at": "2018-01-01",
+        "performers": [1],
+        "work": 16
+      }
+    },
+    {
+      "model": "events.performance",
+      "pk": 2,
+      "fields": {
+        "performed_at": "2019-06-15",
+        "performers": [1],
+        "work": 22
+      }
+    },
+    {
+      "model": "events.performance",
+      "pk": 3,
+      "fields": {
+        "performed_at": "2018-02-01",
+        "performers": [4],
+        "work": 22
+      }
+    },
+    {
+      "model": "events.performance",
+      "pk": 4,
+      "fields": {
+        "performed_at": "2019-07-15",
+        "performers": [4],
+        "work": 16
+      }
+    },
+    {
+      "model": "events.performance",
+      "pk": 5,
+      "fields": {
+        "performed_at": "2018-03-01",
+        "performers": [2, 5],
+        "work": 41
+      }
+    },
+    {
+      "model": "events.performance",
+      "pk": 6,
+      "fields": {
+        "performed_at": "2019-08-15",
+        "performers": [2, 6],
+        "work": 19
+      }
+    },
+    {
+      "model": "events.performance",
+      "pk": 7,
+      "fields": {
+        "performed_at": "2018-04-01",
+        "performers": [3, 6],
+        "work": 19
+      }
+    },
+    {
+      "model": "events.performance",
+      "pk": 8,
+      "fields": {
+        "performed_at": "2019-09-15",
+        "performers": [3, 5],
+        "work": 41
+      }
+    },
+    {
+      "model": "events.performance",
+      "pk": 9,
+      "fields": {
+        "performed_at": "2020-05-01",
+        "performers": [5],
+        "work": 2
+      }
+    },
+    {
+      "model": "events.performance",
+      "pk": 10,
+      "fields": {
+        "performed_at": "2020-10-15",
+        "performers": [5],
+        "work": 28
+      }
+    },
+    {
+      "model": "events.performance",
+      "pk": 11,
+      "fields": {
+        "performed_at": "2020-06-01",
+        "performers": [6],
+        "work": 33
+      }
+    },
+    {
+      "model": "events.performance",
+      "pk": 12,
+      "fields": {
+        "performed_at": "2020-11-15",
+        "performers": [6],
+        "work": 43
+      }
+    },
+    {
+      "model": "events.performance",
+      "pk": 13,
+      "fields": {
+        "performed_at": "2018-07-01",
+        "performers": [7],
+        "work": 16
+      }
+    },
+    {
+      "model": "events.performance",
+      "pk": 14,
+      "fields": {
+        "performed_at": "2019-12-15",
+        "performers": [7],
+        "work": 22
+      }
+    },
+    {
+      "model": "events.performance",
+      "pk": 15,
+      "fields": {
+        "performed_at": "2018-09-01",
+        "performers": [8],
+        "work": 3
+      }
+    },
+    {
+      "model": "events.performance",
+      "pk": 16,
+      "fields": {
+        "performed_at": "2020-01-15",
+        "performers": [8],
+        "work": 5
+      }
+    },
+    {
+      "model": "events.performance",
+      "pk": 17,
+      "fields": {
+        "performed_at": "2018-10-01",
+        "performers": [9],
+        "work": 2
+      }
+    },
+    {
+      "model": "events.performance",
+      "pk": 18,
+      "fields": {
+        "performed_at": "2020-02-15",
+        "performers": [9],
+        "work": 4
+      }
+    },
+    {
+      "model": "events.performance",
+      "pk": 19,
+      "fields": {
+        "performed_at": "2020-01-01",
+        "performers": [10],
+        "work": 1
+      }
+    },
+    {
+      "model": "events.performance",
+      "pk": 20,
+      "fields": {
+        "performed_at": "2020-01-01",
+        "performers": [10],
+        "work": 24
+      }
+    }
+]

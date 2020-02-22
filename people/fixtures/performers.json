@@ -1,0 +1,72 @@
+[
+    {
+      "model": "people.performer",
+      "pk": 1,
+      "fields": {
+        "name": "Truls Mørk"
+      }
+    },
+    {
+      "model": "people.performer",
+      "pk": 2,
+      "fields": {
+        "name": "Hilary Hahn"
+      }
+    },
+    {
+      "model": "people.performer",
+      "pk": 3,
+      "fields": {
+        "name": "Sarah Chang"
+      }
+    },
+    {
+      "model": "people.performer",
+      "pk": 4,
+      "fields": {
+        "name": "Yo-Yo Ma"
+      }
+    },
+    {
+      "model": "people.performer",
+      "pk": 5,
+      "fields": {
+        "name": "New York Philharmonic Orchestra"
+      }
+    },
+    {
+        "model": "people.performer",
+        "pk": 6,
+        "fields": {
+          "name": "Seattle Symphony Orchetra"
+        }
+      },
+      {
+        "model": "people.performer",
+        "pk": 7,
+        "fields": {
+          "name": "Narek Hakhnazaryan"
+        }
+      },
+      {
+        "model": "people.performer",
+        "pk": 8,
+        "fields": {
+          "name": "Emerson String Quartet"
+        }
+      },
+      {
+        "model": "people.performer",
+        "pk": 9,
+        "fields": {
+          "name": "Las Vegas Academy Philharmonic Orchestra"
+        }
+      },
+      {
+        "model": "people.performer",
+        "pk": 10,
+        "fields": {
+          "name": "2Cellos"
+        }
+      }
+  ]

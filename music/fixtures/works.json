@@ -1,0 +1,402 @@
+[
+    {
+      "model": "music.work",
+      "pk": 1,
+      "fields": {
+          "name": "Toccata and Fugue in D minor, BWV 565",
+          "composers": [1]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 2,
+      "fields": {
+          "name": "Goldberg Variations",
+          "composers": [1]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 3,
+      "fields": {
+          "name": "Ave Maria",
+          "composers": [1]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 4,
+      "fields": {
+          "name": "Brandenburg Concerto No. 5",
+          "composers": [1]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 5,
+      "fields": {
+          "name": "Partita for Violin No. 2",
+          "composers": [1]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 6,
+      "fields": {
+          "name": "Piano Sonata No. 14",
+          "composers": [2]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 7,
+      "fields": {
+          "name": "Für Elise",
+          "composers": [2]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 8,
+      "fields": {
+          "name": "Concerto for Violin, Cello, and Piano in C Major",
+          "composers": [2]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 9,
+      "fields": {
+          "name": "Symphony No. 5 in C Minor",
+          "composers": [2]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 10,
+      "fields": {
+          "name": "Symphony No. 9 in D Major",
+          "composers": [2]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 11,
+      "fields": {
+          "name": "Eine kleine Nachtmusik",
+          "composers": [3]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 12,
+      "fields": {
+          "name": "The Magic Flute",
+          "composers": [3]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 13,
+      "fields": {
+          "name": "Symphony No 40 in G Minor",
+          "composers": [3]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 14,
+      "fields": {
+          "name": "The Marriage of Figaro",
+          "composers": [3]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 15,
+      "fields": {
+          "name": "A Musical Joke",
+          "composers": [3]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 16,
+      "fields": {
+          "name": "Cello Sonata No. 2 in F Major",
+          "composers": [4]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 17,
+      "fields": {
+          "name": "Hungarian Dance for Orchestra no. 5 in G minor",
+          "composers": [4]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 18,
+      "fields": {
+          "name": "Double Concerto in A minor",
+          "composers": [4]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 19,
+      "fields": {
+          "name": "Violin Concerto in D major",
+          "composers": [4]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 20,
+      "fields": {
+          "name": "The Blue Danube",
+          "composers": [4]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 21,
+      "fields": {
+          "name": "Piano Concerto No. 2 in C minor",
+          "composers": [5]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 22,
+      "fields": {
+          "name": "Cello Sonata in G minor",
+          "composers": [5]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 23,
+      "fields": {
+          "name": "Cinq Morceaux de Fantaisie",
+          "composers": [5]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 24,
+      "fields": {
+          "name": "Two Pieces (Prelude, Danse Orientale)",
+          "composers": [5]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 25,
+      "fields": {
+          "name": "Piano Concerto No. 3 in D minor",
+          "composers": [5]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 26,
+      "fields": {
+          "name": "Cello Concerto in B minor",
+          "composers": [6]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 27,
+      "fields": {
+          "name": "Symphony No. 9 in E minor, \"From the New World\"",
+          "composers": [6]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 28,
+      "fields": {
+          "name": "Serenade for Strings in E major",
+          "composers": [6]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 29,
+      "fields": {
+          "name": "The Water Goblin",
+          "composers": [6]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 30,
+      "fields": {
+          "name": "Romance in F minor",
+          "composers": [6]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 31,
+      "fields": {
+          "name": "Clair de lune",
+          "composers": [7]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 32,
+      "fields": {
+          "name": "Suite bergamasque",
+          "composers": [7]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 33,
+      "fields": {
+          "name": "Prelude to the Afternoon of a Faun",
+          "composers": [7]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 34,
+      "fields": {
+          "name": "Estampes",
+          "composers": [7]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 35,
+      "fields": {
+          "name": "Beau soir",
+          "composers": [7]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 36,
+      "fields": {
+          "name": "Akhnaten",
+          "composers": [8]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 37,
+      "fields": {
+          "name": "Einstein on the Beach",
+          "composers": [8]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 38,
+      "fields": {
+          "name": "White Raven",
+          "composers": [8]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 39,
+      "fields": {
+          "name": "Hydrogen Jukebox",
+          "composers": [8]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 40,
+      "fields": {
+          "name": "Violin Concerto No. 1",
+          "composers": [8]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 41,
+      "fields": {
+          "name": "Violin Concerto in D minor",
+          "composers": [9]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 42,
+      "fields": {
+          "name": "Finlandia",
+          "composers": [9]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 43,
+      "fields": {
+          "name": "Symphony No. 2 in D major",
+          "composers": [9]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 44,
+      "fields": {
+          "name": "Valse triste",
+          "composers": [9]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 45,
+      "fields": {
+          "name": "Pohjola's Daughter",
+          "composers": [9]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 46,
+      "fields": {
+          "name": "Symphony No. 1 in D major",
+          "composers": [10]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 47,
+      "fields": {
+          "name": "Symphony No.2 \"Resurrection Symphony\"",
+          "composers": [10]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 48,
+      "fields": {
+          "name": "Symphony No. 3 in D minor",
+          "composers": [10]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 49,
+      "fields": {
+          "name": "Symphony No. 4 in G major",
+          "composers": [10]
+      }
+    },
+    {
+      "model": "music.work",
+      "pk": 50,
+      "fields": {
+          "name": "Symphony No. 5 in C# minor",
+          "composers": [10]
+      }
+    }
+  ]
