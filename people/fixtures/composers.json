@@ -1,0 +1,82 @@
+[
+    {
+      "model": "people.composer",
+      "pk": 1,
+      "fields": {
+        "given_name": "John Sebastian",
+        "family_name": "Bach"
+      }
+    },
+    {
+      "model": "people.composer",
+      "pk": 2,
+      "fields": {
+        "given_name": "Ludwig van",
+        "family_name": "Beethoven"
+      }
+    },
+    {
+      "model": "people.composer",
+      "pk": 3,
+      "fields": {
+        "given_name": "Wolfgang Amadeus",
+        "family_name": "Mozart"
+      }
+    },
+    {
+      "model": "people.composer",
+      "pk": 4,
+      "fields": {
+        "given_name": "Johannes",
+        "family_name": "Brahms"
+      }
+    },
+    {
+      "model": "people.composer",
+      "pk": 5,
+      "fields": {
+        "given_name": "Sergei",
+        "family_name": "Rachmaninov"
+      }
+    },
+    {
+      "model": "people.composer",
+      "pk": 6,
+      "fields": {
+        "given_name": "Antonin",
+        "family_name": "Dvorak"
+      }
+    },
+    {
+      "model": "people.composer",
+      "pk": 7,
+      "fields": {
+        "given_name": "Claude",
+        "family_name": "Debussy"
+      }
+    },
+    {
+      "model": "people.composer",
+      "pk": 8,
+      "fields": {
+        "given_name": "Phillip",
+        "family_name": "Glass"
+      }
+    },
+    {
+      "model": "people.composer",
+      "pk": 9,
+      "fields": {
+        "given_name": "Jean",
+        "family_name": "Sibelius"
+      }
+    },
+    {
+      "model": "people.composer",
+      "pk": 10,
+      "fields": {
+        "given_name": "Gustav",
+        "family_name": "Mahler"
+      }
+    }
+  ]

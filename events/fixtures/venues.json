@@ -1,0 +1,37 @@
+[
+    {
+        "model": "events.venue",
+        "pk": 1,
+        "fields": {
+            "name": "Artemus W. Ham Concert Hall"
+        }
+    },
+    {
+    "model": "events.venue",
+        "pk": 2,
+        "fields": {
+            "name": "The Smith Center"
+        }
+    },
+    {
+        "model": "events.venue",
+        "pk": 3,
+        "fields": {
+            "name": "Sydney Opera House"
+        }
+    },
+    {
+        "model": "events.venue",
+        "pk": 4,
+        "fields": {
+            "name": "Carnegie Hall"
+        }
+    },
+    {
+        "model": "events.venue",
+        "pk": 5,
+        "fields": {
+            "name": "John F. Kennedy Center for the Performing Arts"
+        }
+    }
+]
