@@ -3,6 +3,7 @@ from django.db import models
 from music.models import Work
 from people.models import Performer
 
+
 class Performance(models.Model):
     performed_at = models.DateField()
     performers = models.ManyToManyField(Performer)
