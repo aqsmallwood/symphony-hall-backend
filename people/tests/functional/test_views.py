@@ -5,7 +5,7 @@ from django.urls import reverse
 from people.models import Composer, Performer
 
 @pytest.mark.django_db
-def test_get_composers_when_no_composers_returns_empty_list(client):
+def test_get_composers_when_no_composers_then_return_empty_list(client):
     url = reverse('composer-list')
 
     response = client.get(url)
@@ -54,7 +54,7 @@ def test_get_composer_when_composer_exists_then_return_composer(client):
 
 
 @pytest.mark.django_db
-def test_get_performers_when_no_performers_returns_empty_list(client):
+def test_get_performers_when_no_performers_then_return_empty_list(client):
     url = reverse('performer-list')
 
     response = client.get(url)
