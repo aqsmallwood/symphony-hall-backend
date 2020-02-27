@@ -6,11 +6,13 @@ from events.models import Performance
 
 def test_performance_has_necessary_fields():
     performance = Performance()
-    performance.id = 1 # Required before access to related fields ('performers') is allowed    
+    # Required before access to related fields ('performers') is allowed
+    performance.id = 1
 
     assert True == hasattr(performance, 'id')
     assert True == hasattr(performance, 'performed_at')
     assert True == hasattr(performance, 'performers')
+
 
 def test_performance_has_meaningful_string_representation():
     test_work_name = 'Symphony 1'

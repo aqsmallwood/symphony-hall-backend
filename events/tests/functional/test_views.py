@@ -67,7 +67,8 @@ def test_get_performances_when_no_performances_then_return_empty_list(client):
 
 @pytest.mark.django_db
 def test_get_performances_when_performances_exist_then_return_list_of_performance_data(client):
-    test_composer = Composer.objects.create(given_name='Camille', family_name='Saint-Saëns')
+    test_composer = Composer.objects.create(
+        given_name='Camille', family_name='Saint-Saëns')
     test_work = Work.objects.create(name='The Swan')
     test_work.save()
     test_work.composers.add(test_composer)
@@ -88,4 +89,5 @@ def test_get_performances_when_performances_exist_then_return_list_of_performanc
     returned_performances = response.data
     assert len(returned_performances) == 1
     assert returned_performances[0]['work']['id'] == test_work.id
-    assert returned_performances[0]['performed_at'] == test_performance_date.isoformat()
+    assert returned_performances[0]['performed_at'] == test_performance_date.isoformat(
+    )

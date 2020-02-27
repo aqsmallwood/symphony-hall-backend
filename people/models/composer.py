@@ -11,5 +11,3 @@ class Composer(models.Model):
     @property
     def full_name(self):
         return f'{self.given_name} {self.family_name}'
-
-

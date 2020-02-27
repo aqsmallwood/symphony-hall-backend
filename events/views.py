@@ -26,5 +26,6 @@ class PerformanceViewSet(viewsets.ViewSet):
 
     def list(self, request):
         queryset = Performance.objects.all()
-        serializer = PerformanceSerializer(queryset, many=True, context={'request': request})
+        serializer = PerformanceSerializer(
+            queryset, many=True, context={'request': request})
         return Response(serializer.data)
