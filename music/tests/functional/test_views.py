@@ -16,7 +16,8 @@ def test_get_works_when_no_works_then_return_empty_list(client):
 
 @pytest.mark.django_db
 def test_get_works_when_works_exist_then_return_empty_list(client):
-    test_composer = Composer.objects.create(given_name='Maurice', family_name='Ravel')
+    test_composer = Composer.objects.create(
+        given_name='Maurice', family_name='Ravel')
 
     test_work = Work.objects.create(name='Bolero')
     test_work.composers.add(test_composer)

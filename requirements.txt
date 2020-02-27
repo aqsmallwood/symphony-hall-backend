@@ -1,5 +1,6 @@
 asgiref==3.2.3
 attrs==19.3.0
+autopep8==1.5
 coverage==5.0.3
 Django==3.0.3
 django-environ==0.4.5
@@ -11,9 +12,9 @@ packaging==20.1
 pluggy==0.13.1
 psycopg2-binary==2.8.4
 py==1.8.1
+pycodestyle==2.5.0
 pyparsing==2.4.6
 pytest==5.3.5
-pytest-django==3.8.0
 pytz==2019.3
 six==1.14.0
 sqlparse==0.3.0
