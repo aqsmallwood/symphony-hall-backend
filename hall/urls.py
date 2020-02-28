@@ -3,6 +3,7 @@ from django.urls import path, include
 from django.http import HttpResponse
 from rest_framework_jwt.views import obtain_jwt_token
 
+
 def index_view(request):
     return HttpResponse("Hello world")
 
