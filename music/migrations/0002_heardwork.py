@@ -16,9 +16,12 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='HeardWork',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
-                ('work', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='music.Work')),
+                ('id', models.AutoField(auto_created=True,
+                                        primary_key=True, serialize=False, verbose_name='ID')),
+                ('user', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
+                ('work', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE, to='music.Work')),
             ],
         ),
     ]
