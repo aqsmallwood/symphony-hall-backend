@@ -1,0 +1,8 @@
+.git/
+*.sqlite3
+.idea/
+venv/
+
+.coverage
+htmlcov/
+**/__pycache__
