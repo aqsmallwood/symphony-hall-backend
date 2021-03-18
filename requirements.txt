@@ -2,7 +2,7 @@ asgiref==3.2.3
 attrs==19.3.0
 autopep8==1.5
 coverage==5.0.3
-Django==3.0.3
+Django==3.1.6
 django-environ==0.4.5
 django-rest-framework==0.1.0
 djangorestframework==3.11.0
